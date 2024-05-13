@@ -5,7 +5,7 @@ with customer_summary as (
         to_date(max(order_date) over(partition by CUSTOMER_ID), 'DD/MM/YYYY') as last_purchase_date,
         ceil(sum(sum_of_quantity * SELLING_PRICE_FOR_DELIVERED) over(partition by CUSTOMER_ID)) as Monetary,
         ceil(MONTHS_BETWEEN(sysdate, to_date(max(order_date) over(partition by CUSTOMER_ID), 'DD/MM/YYYY'))) as Recency_months
-    from
+    FROM
         pizzaorders
 ),
 ntiles as (
