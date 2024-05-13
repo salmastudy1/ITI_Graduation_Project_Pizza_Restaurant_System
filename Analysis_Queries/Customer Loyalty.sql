@@ -1,5 +1,5 @@
 with customer_summary as (
-    select distinct
+    SELECT DISTINCT 
         CUSTOMER_ID,
         count(order_ID) over(partition by CUSTOMER_ID) as Frequency,
         to_date(max(order_date) over(partition by CUSTOMER_ID), 'DD/MM/YYYY') as last_purchase_date,
