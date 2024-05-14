@@ -22,11 +22,5 @@ performance, and optimize operations.
 
 •	Create advanced analytics and BI (Business Intelligence) queries to analyze sales trends, monitor customer loyalty programs, and evaluate performance.
 
-# **Contributors**
-- **Esraa Kamel**
-  
-- **Fatimah Adel**
 
-- **George Yohana**
 
-- **Salma Osama**
